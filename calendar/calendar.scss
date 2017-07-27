@@ -1,0 +1,40 @@
+ion-calendar {
+  font-family: "Microsoft YaHei";
+  .center {
+    text-align: center;
+  }
+  .calendar-header-col {
+    font-size: 1rem;
+    color: #666;
+  }
+  .calendar-row {
+    &:last-child {
+      border-bottom: 1px solid #eee;
+    }
+    .calendar-col {
+      display: flex;
+      justify-content: center;
+      padding: 0.8rem;
+      font-size: 1.2rem;
+      border-left: 1px solid #eee;
+      border-top: 1px solid #eee;
+      &:last-child {
+        border-right: 1px solid #eee;
+      }
+    }
+    .not-this-month {
+      color: #fff;
+      background: linear-gradient(#e5e5e5, #dfdfdf);
+    }
+    .today {
+      color: #fff;
+      box-shadow:inset 0 0 10px #aaa; 
+      background: radial-gradient(#c5c5c5, #c8c8c8, #ccc);
+    }
+    .select {
+      box-shadow: none;
+      color: #fff;
+      background: radial-gradient(#5c7eda, #5e89ec, #5e89ec);
+    }
+  }
+}
