@@ -6,7 +6,7 @@
 
 - Some source in that library should be easy to apply but maybe hard to extends to adapt on what you need. It's a message for user want developer extend that library and think about it does 80% work. The rest, 20% hardest things for your developer so should play nice. :D
 
-<img src="![demo](https://github.com/laker007/ionic3-calendar/blob/master/calendar.png)" align="left" width="25%"/>
+![image](https://github.com/laker007/ionic3-calendar/blob/master/calendar.png)"
 
 # Setup and Running 
 - npm install -g ionic
