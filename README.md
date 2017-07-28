@@ -6,49 +6,32 @@
 
 - npm install ionic3-calendar --save (in ionic project folder)
 - in app.module.ts
-- <code>import { CalendarModule } from 'ionic3-calendar';
+
+``` javascript
+import { CalendarModule } from 'ionic3-calendar';
 
   @NgModule({
-    
     ...
-
   imports: [
-
     ...
-
     CalendarModule,
-
     ...
-
   ]
-
     ...
-
   })
-</code>
+```
 
 - Push component to anywhere you want to display it
 
-  `<ion-calendar></ion-calendar>`
+  `<ion-calendar #calendar></ion-calendar>`
 
 - Go Today
-<code>
 
-  @ViewChild(Calendar) private calendar: Calendar;
-
-  today(){
-    this.calendar.today();
-  }
-</code>
+  `<button ion-button clear (click)="calendar.today()">Today</button>`
 
 - Click The Day And Get The Day
 
-    `<ion-calendar (onDaySelect)="onDaySelect(day)"></ion-calendar>`
-
-    <code>
-    onDaySelect(day){
-      console.log(day)
-    }</code>
+  `<ion-calendar (onDaySelect)="onDaySelect(day)"></ion-calendar>`
 
 ## Update
 
