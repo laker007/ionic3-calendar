@@ -1,4 +1,4 @@
-# ionic2-calendar
+# ionic3-calendar
 
 - That project support base calendar directive with Month, Week, Day views that can easy to integrate with your mobile app.
 
@@ -6,7 +6,7 @@
 
 - Some source in that library should be easy to apply but maybe hard to extends to adapt on what you need. It's a message for user want developer extend that library and think about it does 80% work. The rest, 20% hardest things for your developer so should play nice. :D
 
-![image](https://github.com/laker007/ionic3-calendar/blob/master/calendar.png)"
+![image](https://github.com/laker007/ionic3-calendar/blob/master/calendar.png?raw=true)"
 
 # Setup and Running 
 - npm install -g ionic
