@@ -35,4 +35,4 @@ import { CalendarModule } from 'ionic3-calendar';
 
 ## Update
 
-- 29th July 2017:   Thanks For Smartisan Designer-[Here is the link](https://dribbble.com/smartisan_design)
+- 28th July 2017:   Thanks For Smartisan Designer-[Here is the link](https://dribbble.com/smartisan_design)
