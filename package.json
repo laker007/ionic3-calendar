@@ -1,0 +1,23 @@
+{
+  "name": "ionic3-calendar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laker007/ionic3-calendar.git"
+  },
+  "author": "laker007",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laker007/ionic3-calendar/issues"
+  },
+  "homepage": "https://github.com/laker007/ionic3-calendar#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1"
+  }
+}
