@@ -16,13 +16,12 @@ var Calendar = (function () {
         this.dateArray = []; // 本月展示的所有天的数组
         this.weekArray = []; // 保存日历每行的数组
         this.lastSelect = 0; // 记录上次点击的位置
-        this.weekHead = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
+        // weekHead: string[] = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
+        this.weekHead = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
         this.currentYear = moment().year();
         this.currentMonth = moment().month();
         this.currentDate = moment().date();
         this.currentDay = moment().day();
-        // this.displayYear = this.currentYear;
-        // this.displayMonth = this.currentMonth;
     }
     Calendar.prototype.ngOnInit = function () {
         this.today();
@@ -182,7 +181,7 @@ __decorate([
 Calendar = __decorate([
     Component({
         selector: 'ion-calendar',
-        template: "\n    <ion-grid>\n  <ion-row justify-content-center>\n    <ion-col col-auto (click)=\"back()\">\n      <ion-icon ios=\"ios-arrow-back\" md=\"md-arrow-back\"></ion-icon>\n    </ion-col>\n    <ion-col col-auto>\n      <div>{{displayYear}} \u5E74 {{displayMonth + 1}} \u6708</div>\n    </ion-col>\n    <ion-col col-auto (click)=\"forward()\">\n      <ion-icon ios=\"ios-arrow-forward\" md=\"md-arrow-forward\"></ion-icon>\n    </ion-col>\n  </ion-row>\n\n  <ion-row>\n    <ion-col class=\"center calendar-header-col\" *ngFor=\"let head of weekHead\">{{head}}</ion-col>\n  </ion-row>\n\n  <ion-row class=\"calendar-row\" *ngFor=\"let week of weekArray;let i = index\">\n    <ion-col class=\"center calendar-col\" (click)=\"daySelect(day,i,j)\" *ngFor=\"let day of week;let j = index\" [ngClass]=\"[day.isThisMonth?'this-month':'not-this-month',day.isToday?'today':'',day.isSelect?'select':'']\">\n      {{day.date}}\n    </ion-col>\n  </ion-row>\n\n</ion-grid>\n"
+        template: "\n    <ion-grid>\n        <ion-row justify-content-center>\n            <ion-col col-auto (click)=\"back()\">\n                <ion-icon ios=\"ios-arrow-back\" md=\"md-arrow-back\"></ion-icon>\n            </ion-col>\n            <ion-col col-auto>\n                <div>{{displayYear}} \u5E74 {{displayMonth + 1}} \u6708</div>\n            </ion-col>\n            <ion-col col-auto (click)=\"forward()\">\n                <ion-icon ios=\"ios-arrow-forward\" md=\"md-arrow-forward\"></ion-icon>\n            </ion-col>\n        </ion-row>\n\n        <ion-row>\n            <ion-col class=\"center calendar-header-col\" *ngFor=\"let head of weekHead\">{{head}}</ion-col>\n        </ion-row>\n\n        <ion-row class=\"calendar-row\" *ngFor=\"let week of weekArray;let i = index\">\n            <ion-col class=\"center calendar-col\" (click)=\"daySelect(day,i,j)\" \n            *ngFor=\"let day of week;let j = index\" \n            [ngClass]=\"[day.isThisMonth?'this-month':'not-this-month',day.isToday?'today':'',day.isSelect?'select':'']\">\n                {{day.date}}\n            </ion-col>\n        </ion-row>\n\n    </ion-grid>\n"
     }),
     __metadata("design:paramtypes", [])
 ], Calendar);

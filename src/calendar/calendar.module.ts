@@ -8,7 +8,7 @@ import { Calendar } from './calendar';
   imports: [
     IonicModule,
   ],
-  exports:[
+  exports: [
     Calendar
   ]
 })

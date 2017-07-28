@@ -6,29 +6,31 @@ import * as _ from "lodash";
     selector: 'ion-calendar',
     template: `
     <ion-grid>
-  <ion-row justify-content-center>
-    <ion-col col-auto (click)="back()">
-      <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
-    </ion-col>
-    <ion-col col-auto>
-      <div>{{displayYear}} 年 {{displayMonth + 1}} 月</div>
-    </ion-col>
-    <ion-col col-auto (click)="forward()">
-      <ion-icon ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon>
-    </ion-col>
-  </ion-row>
+        <ion-row justify-content-center>
+            <ion-col col-auto (click)="back()">
+                <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+            </ion-col>
+            <ion-col col-auto>
+                <div>{{displayYear}} 年 {{displayMonth + 1}} 月</div>
+            </ion-col>
+            <ion-col col-auto (click)="forward()">
+                <ion-icon ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon>
+            </ion-col>
+        </ion-row>
 
-  <ion-row>
-    <ion-col class="center calendar-header-col" *ngFor="let head of weekHead">{{head}}</ion-col>
-  </ion-row>
+        <ion-row>
+            <ion-col class="center calendar-header-col" *ngFor="let head of weekHead">{{head}}</ion-col>
+        </ion-row>
 
-  <ion-row class="calendar-row" *ngFor="let week of weekArray;let i = index">
-    <ion-col class="center calendar-col" (click)="daySelect(day,i,j)" *ngFor="let day of week;let j = index" [ngClass]="[day.isThisMonth?'this-month':'not-this-month',day.isToday?'today':'',day.isSelect?'select':'']">
-      {{day.date}}
-    </ion-col>
-  </ion-row>
+        <ion-row class="calendar-row" *ngFor="let week of weekArray;let i = index">
+            <ion-col class="center calendar-col" (click)="daySelect(day,i,j)" 
+            *ngFor="let day of week;let j = index" 
+            [ngClass]="[day.isThisMonth?'this-month':'not-this-month',day.isToday?'today':'',day.isSelect?'select':'']">
+                {{day.date}}
+            </ion-col>
+        </ion-row>
 
-</ion-grid>
+    </ion-grid>
 `
 })
 
@@ -54,8 +56,8 @@ export class Calendar {
 
     lastSelect: number = 0; // 记录上次点击的位置
 
-    weekHead: string[] = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
-
+    // weekHead: string[] = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
+    weekHead: string[] = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 
     constructor() {
@@ -63,9 +65,6 @@ export class Calendar {
         this.currentMonth = moment().month();
         this.currentDate = moment().date();
         this.currentDay = moment().day();
-
-        // this.displayYear = this.currentYear;
-        // this.displayMonth = this.currentMonth;
     }
 
     ngOnInit() {
