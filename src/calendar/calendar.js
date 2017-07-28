@@ -173,18 +173,18 @@ var Calendar = (function () {
         this.dateArray[i * 7 + j].isSelect = true;
         this.onDaySelect.emit(day);
     };
-    __decorate([
-        Output(),
-        __metadata("design:type", Object)
-    ], Calendar.prototype, "onDaySelect", void 0);
-    Calendar = __decorate([
-        Component({
-            selector: 'ion-calendar',
-            templateUrl: 'calendar.html'
-        }),
-        __metadata("design:paramtypes", [])
-    ], Calendar);
     return Calendar;
 }());
+__decorate([
+    Output(),
+    __metadata("design:type", Object)
+], Calendar.prototype, "onDaySelect", void 0);
+Calendar = __decorate([
+    Component({
+        selector: 'ion-calendar',
+        templateUrl: 'calendar.html'
+    }),
+    __metadata("design:paramtypes", [])
+], Calendar);
 export { Calendar };
 //# sourceMappingURL=calendar.js.map

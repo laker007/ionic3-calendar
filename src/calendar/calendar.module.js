@@ -10,20 +10,20 @@ import { Calendar } from './calendar';
 var CalendarModule = (function () {
     function CalendarModule() {
     }
-    CalendarModule = __decorate([
-        NgModule({
-            declarations: [
-                Calendar,
-            ],
-            imports: [
-                IonicModule,
-            ],
-            exports: [
-                Calendar
-            ]
-        })
-    ], CalendarModule);
     return CalendarModule;
 }());
+CalendarModule = __decorate([
+    NgModule({
+        declarations: [
+            Calendar,
+        ],
+        imports: [
+            IonicModule,
+        ],
+        exports: [
+            Calendar
+        ]
+    })
+], CalendarModule);
 export { CalendarModule };
 //# sourceMappingURL=calendar.module.js.map
