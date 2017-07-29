@@ -31,8 +31,13 @@ import { CalendarModule } from 'ionic3-calendar';
 
 - Click The Day And Get The Day
 
-  `<ion-calendar (onDaySelect)="onDaySelect(day)"></ion-calendar>`
+  `<ion-calendar (onDaySelect)="onDaySelect($event)"></ion-calendar>`
 
 ## Update
+
+- 29th July 2017:   
+  Fix Bug:    
+  The Right Way To Get The Day:  `<ion-calendar (onDaySelect)="onDaySelect($event)"></ion-calendar>`
+  Sorry for my mistake.
 
 - 28th July 2017:   Thanks For Smartisan Designer-[Here is the link](https://dribbble.com/smartisan_design)
