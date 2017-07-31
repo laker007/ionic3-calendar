@@ -33,12 +33,23 @@ import { CalendarModule } from 'ionic3-calendar';
 
   `<ion-calendar #calendar (onDaySelect)="onDaySelect($event)"></ion-calendar>`
 
+- In The End
+
+  Restart Ionic Serve
+
 ## Update
 
-- 29th July 2017:   
-  Fix Bug:    
-  The Right Way To Get The Day:
-  <br>`<ion-calendar #calendar (onDaySelect)="onDaySelect($event)"></ion-calendar>`
-  <br>Sorry for my mistake.
+- 31st July 2017
+
+  Update README FILE
+
+- 29th July 2017:
+
+  Fix Bug:
+  The Right Way To Get The Day: 
+
+  `<ion-calendar #calendar (onDaySelect)="onDaySelect($event)"></ion-calendar>`
+
+  Sorry for my mistake.
 
 - 28th July 2017:   Thanks For Smartisan Designer-[Here is the link](https://dribbble.com/smartisan_design)
